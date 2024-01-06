@@ -17,7 +17,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 200px;
+  margin: 0px 130px;
 }
 .nav-title {
   color: #181818;
@@ -40,13 +40,17 @@ nav a {
 
 .header {
   background: #fff8f3;
-  background-image: url(/images/header_bg.png);
+  background-image: url("/images/header_bg.png");
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+.header {
+  background-image: url("/images/developer.png");
+  background-position: center left;
+}
 
 .banner {
-  padding: 30px 30px 0px 100px;
+  padding: 30px 30px 0px 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -176,6 +180,8 @@ main section {
   text-align: center;
   margin-top: 50px;
 }
+
+/* footer */
 .footer {
   background: #fff8f3;
   display: flex;
@@ -184,22 +190,26 @@ main section {
   gap: 100px;
 }
 .footer-column {
-  /* display: flex; */
-  /* justify-content: column; */
-  width: 50%;
-  text-align: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: flex-start;
 }
 .contact input[type="text"],
 .contact input[type="email"],
 textarea {
   display: block;
   margin-bottom: 25px;
-  padding: 18px 25px;
+  padding: 18px 30px;
   color: #757575;
   background-color: #fff;
   border-radius: 5px;
   border: 0;
-  width: 50%;
+  width: 100%;
+}
+.contact {
+  width: 70%;
 }
 .social-links {
   margin-right: 25px;
